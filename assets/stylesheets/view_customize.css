@@ -58,14 +58,24 @@ input#view_customize_comments {
     width: 95%;
 }
 
-.icon-view_customize {
-    background-image: url("../images/view_customize.png");
+.icon-view_customize:before,
+.icon-view_customize-disable:before,
+.icon-view_customize-enable:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
 }
 
-.icon-view_customize-disable {
-    background-image: url("../images/disable.png");
+.icon-view_customize:before {
+    content: "\f06e"; /* fa-eye */
 }
 
-.icon-view_customize-enable {
-    background-image: url("../images/enable.png");
+.icon-view_customize-disable:before {
+    content: "\f05e"; /* fa-ban */
+}
+
+.icon-view_customize-enable:before {
+    content: "\f058"; /* fa-check-circle */
 }
